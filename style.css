@@ -1,13 +1,19 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0;
-    margin: 0;
+    background: linear-gradient(0.25turn, #646464, #d1d1d1, #646464);
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -50px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     margin-top: 25vh;
 }
 
@@ -17,29 +23,44 @@ body {
     grid-template-rows: minmax(120px auto)repeat(5 1fr);
     min-height: 50vh;
     width: 35vh;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid white
+}
+
+button {
+    border: 1px solid white;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgba(235, 235, 235, 0.815);
 }
 
 .current {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(235, 235, 235);
     grid-column: span 4;
     padding: 0px 20px;
     font-size: 32px;
     text-align: right;
-    margin-bottom: -20px;
+    overflow-wrap: break-word;
 }
 
 .previous {
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(235, 235, 235);
     grid-column: span 4;
     padding: 3px 20px;
     text-align: right;
+    overflow-wrap: break-word;
 }
 
 .equals {
     grid-column: span 2;
 }
 
-button {
-    border: 2px solid white;
+footer {
+    margin-top: 5em;
 }
+
+.gitlogo {
+    height: 20px;
+}
+
